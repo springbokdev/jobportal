@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: jobportal
+  datasource:
+    username: jobportal
+    password: jobportal
+    url: jdbc:mysql://localhost:3306/jobportal
+
