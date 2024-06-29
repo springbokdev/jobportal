@@ -28,6 +28,10 @@
     </scm>
     <properties>
         <java.version>22</java.version>
+        <org.webjars.bootstrap.version>5.2.0</org.webjars.bootstrap.version>
+        <org.webjars.jquery.version>3.6.0</org.webjars.jquery.version>
+        <org.webjars.locator.version>0.45</org.webjars.locator.version>
+        <org.webjars.font-awesome.version>6.1.0</org.webjars.font-awesome.version>
     </properties>
     <dependencies>
         <dependency>
@@ -37,6 +41,28 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- WebJars -->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>bootstrap</artifactId>
+            <version>${org.webjars.bootstrap.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+            <version>${org.webjars.jquery.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>webjars-locator</artifactId>
+            <version>${org.webjars.locator.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>font-awesome</artifactId>
+            <version>${org.webjars.font-awesome.version}</version>
         </dependency>
 
         <dependency>
