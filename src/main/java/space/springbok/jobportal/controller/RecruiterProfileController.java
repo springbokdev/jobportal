@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import space.springbok.jobportal.entity.RecruiterProfile;
 import space.springbok.jobportal.entity.User;
-import space.springbok.jobportal.repository.UserRepository;
 import space.springbok.jobportal.services.RecruiterProfileService;
 import space.springbok.jobportal.services.UserService;
 
