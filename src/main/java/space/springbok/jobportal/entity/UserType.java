@@ -9,6 +9,7 @@ import java.util.List;
 @Table(name = "users_type")
 @Getter
 @Setter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -23,11 +24,4 @@ public class UserType {
     @OneToMany(targetEntity = User.class, mappedBy = "userTypeId", cascade = CascadeType.ALL)
     private List<User> users;
 
-    @Override
-    public String toString() {
-        return "UserType{" +
-                "userTypeName='" + userTypeName + '\'' +
-                ", userTypeId=" + userTypeId +
-                '}';
-    }
 }

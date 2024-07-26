@@ -11,6 +11,7 @@ import java.util.Date;
 @Table(name = "users")
 @Getter
 @Setter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -35,14 +36,4 @@ public class User {
     @JoinColumn(name = "userTypeId", referencedColumnName = "userTypeId")
     private UserType userTypeId;
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "userId=" + userId +
-                ", email='" + email + '\'' +
-                ", isActive=" + isActive +
-                ", registrationDate=" + registrationDate +
-                ", userTypeId=" + userTypeId +
-                '}';
-    }
 }
