@@ -81,6 +81,6 @@ public class RecruiterProfileController {
             log.error(ex.getMessage());
         }
 
-        return "redirect:/dashboard/";
+        return "redirect:/dashboard";
     }
 }
