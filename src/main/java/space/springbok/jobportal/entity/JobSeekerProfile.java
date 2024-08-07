@@ -15,7 +15,7 @@ import java.util.List;
 public class JobSeekerProfile {
 
     @Id
-    private int user_account_id;
+    private Integer userAccountId;
 
     @OneToOne
     @JoinColumn(name = "user_account_id")
@@ -36,4 +36,10 @@ public class JobSeekerProfile {
 
     @OneToMany(targetEntity = Skill.class, cascade = CascadeType.ALL, mappedBy = "jobSeekerProfile")
     private List<Skill> skills;
+
+    @Transient
+    public String getPhotosImagePath() {
+        if (profilePhoto == null || userAccountId == null) return null;
+        return "/photos/candidate/" + userAccountId + "/" + profilePhoto;
+    }
 }
